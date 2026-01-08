@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <title>Sante_BF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="bannière">
+                    <div class="logo"><svg width="40" height="40" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="#2ecc71"/>
+                        <!-- Croix principale -->
+                        <rect x="46" y="30" width="8" height="40" fill="white"/>
+                        <rect x="30" y="46" width="40" height="8" fill="white"/>
+                        <!-- Petit + en bas à droite -->
+                        <rect x="68" y="68" width="4" height="12" fill="white"/>
+                        <rect x="64" y="72" width="12" height="4" fill="white"/>
+                        </svg>
+                        e-Santé BF
+                    </div>
+                    <div class="menu">
+                        <ul class="Menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="">Mes rendez-vous</a></li>
+                            <li><a href="CHU Yalgado Ouédraogo .html">Services</a></li>
+                            <li><button type="button" name="notification" class="notification">🔔</button></li>
+                            <div class="connecter"><button type="submit">Se connecter</button></div>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="prise_Rdv">
+        <h1>Prise de rendez-vous</h1>
+        <p>suivez les étapes ci-dessous pour réserver votre consultation.</p>
+        <h3>1. Choisissez un service</h3>
+        <div class="service_select">
+            <label for="service"> service médical</label>
+            <select name="service" id="service">
+                <option value="">sélectionnez un service</option>
+                <option value="cardiologie">Cardiologie</option>
+                <option value="pediatie">Pédiatrie</option>
+                <option value="chirurgie">Chirurgie Générale</option>
+                <option value="maternité">Maternité</option>
+                <option value="radiologie">Radiologie</option>
+                <option value="laboratoire">Laboratoire d'analyses</option>
+                <option value="urgences">Urgences 24/7</option>
+                <option value="vaccination">Vaccination</option>
+
+            </select>
+
+        </div>
+        <div class="medec_choix">
+            <h3>2. choisissez un médecin</h3>
+            <label for="medec_choix">Médecin</label>
+            <select name="medecin" id="medecin">
+                <option value="">selectionnez un médecin</option>
+                <option value="Dr Aminata Traoré">Dr Aminata Traoré</option>
+                <option value="Dr Moussa Diallo">Dr Moussa Diallo</option>
+                <option value="Dr Fatoumata Kabore">Dr Fatoumata Kabore</option>
+            </select>
+        </div>
+        <h3>3. Sélectionner une date et un créneau horaire</h3>
+        <div class="date_heure">
+            
+            <div class="date">
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="horaire">
+                <h4>Créneaux disponibles</h4>
+                <div class="crénaux_hor">
+                    <button type="button" name="button" >09:00</button>
+                    <button type="button" name="button" >09:30</button>
+                    <button type="button" name="button" >10:00</button>
+                    <button type="button" name="button" >10:30</button>
+                    <button type="button" name="button" >11:00</button>
+                    <button type="button" name="button" >14:00</button>
+                    <button type="button" name="button" >14:30</button>
+                    <button type="button" name="button" >15:00</button>
+                    <button type="button" name="button" >15:30</button>
+                </div>
+            </div>
+        </div>
+        <h3>4. Récapitulatif</h3>
+        <div class="recap">
+            <div class="recap_box">
+                <div class="service_box">
+                    <p>Service:</p>
+                    <div class="box_container" id="service_container">
+
+                    </div>
+                </div>
+                <div class="medec_box" id="medecin_container">
+                    <p>Médecin:</p>
+                    <div class="box_container">
+
+                    </div>
+                </div>
+                <div class="date_box" id="date_container">
+                    <p>Date:</p>
+                    <div class="box_container">
+
+                    </div>
+                </div>
+                <div class="heure_box" id="heure_container">
+                    <p>Heure:</p>
+                    <div class="box_container">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="confirmation">
+            <button type="submit" name="confirmer">Confirmer le rendez-vous ➡️</button>
+
+        </div>
+    </div>
+    </body>
+</html>

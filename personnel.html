@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head lang="fr">
+        <title>Sante_BF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="bannière">
+                    <div class="logo"><svg width="40" height="40" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="#2ecc71"/>
+                        <!-- Croix principale -->
+                        <rect x="46" y="30" width="8" height="40" fill="white"/>
+                        <rect x="30" y="46" width="40" height="8" fill="white"/>
+                        <!-- Petit + en bas à droite -->
+                        <rect x="68" y="68" width="4" height="12" fill="white"/>
+                        <rect x="64" y="72" width="12" height="4" fill="white"/>
+                        </svg>
+                        e-Santé BF
+                    </div>
+                    <div class="menu">
+                        <ul class="Menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Mes rendez-vous</a></li>
+                            <div class="connecter"><button type="submit">Se connecter</button></div>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div class="identite">
+            
+                <div class="photo_ident">
+                    <img src="" alt="Photo du Dr">
+                </div>
+                <div class="fonction">
+                    <h3>Dr Jean COMPAORE</h3>
+                    <p class="specialité">Cardiologue</p>
+                    <p class="Lieu_travail">Hôpital Yalgado Ouédraogo</p>
+                </div>
+            
+            <div class="right">
+                <button class="share">Share</button>
+                <button class="J'aime">Like</button>
+            </div>
+        </div>
+        <div class="description_rdv">
+            <div class="Dr_description">
+                <h3>A propos du Dr Jean COMPAORE</h3>
+                <p>Une briêve biographie décrivant l'approche, l'expérience et la philosophie 
+                    du medécin mettant en avant son engagement envers les soins aux patients 
+                    et son expertise dans le domaine de le domaine de la cardiologie. Le Dr COMPAORE
+                    reconnu pour son approche empathique et son  devouement à fournir des soins de la plus haute qualité. 
+                </p>
+                <h3>Qualification</h3>
+                <ul>
+                    <li><span class="point">.</span> Diplôme de Docteur en Médicine- Université de Ouagadougou</li>
+                    <li><span class="point">.</span>Spécialisation en Cardiologie- Université Cheikh Anta Diop de Dakar </li>
+                    <li><span class="point">.</span> Membre de la Société Burkinabè de Cardiologie</li>
+                </ul>
+                <h3>Langue parlées</h3>
+                <ul class="language">
+                    <li>Mooré</li>
+                    <li>Francais</li>
+                    <li>Anglais</li>
+                </ul>
+            </div>
+            <div class="prise_rdv">
+                <h3>Prendre un rendez-vous</h3>
+                <label for="rdv_date">Choisir une date</label>
+                    <input type="date" id="date">
+                <label for="rdv_heure">Choisir un créneau</label>
+                <div class="but_ho">
+                    <button type="button" id="heure">09:00</button>
+                    <button type="button" id="heure">09:30</button>
+                    <button type="button" id="heure">10:00</button>
+                    <button type="button" id="heure">10:30</button>
+                    <button type="button" id="heure">11:00</button>
+                    <button type="button" id="heure">11:30</button>
+                </div>
+                <button type="submit" class="confirm">Confirmer le rendez-vous</button>
+            </div>
+        </div>
+        <div class="horaire_consult">
+            <ul class="horaires-liste">
+                <h3>Horaires de Consultation</h3>
+                <div class="horaire_box">
+                <li>
+                    <span>Lundi</span>
+                    <span>08:00 - 12:00</span>
+                </li>
+                <li>
+                    <span>Mardi</span>
+                    <span>14:00 - 18:00</span>
+                </li>
+                <li>
+                    <span>Mercredi</span>
+                    <span>08:00 - 12:00</span>
+                </li>
+                <li>
+                    <span>Jeudi</span>
+                    <span>14:00 - 18:00</span>
+                </li>
+                <li>
+                    <span>Vendredi</span>
+                    <span>08:00 - 12:00</span>
+                </li>
+                <li>
+                    <span>Samedi & Dimanche</span>
+                    <span>Fermé</span>
+                </li>
+                </div>
+            </ul>
+        </div>
+    </body>
+</html>

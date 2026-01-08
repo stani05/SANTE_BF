@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 2px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -67,10 +67,11 @@ input{
     padding: 6px;
 }
 .choix{
-    width: 100%;
+    width: 99%;
     background-color: white;
     padding: 4px;
     margin-bottom:40px ;
+    border-radius: 8px;
 }
 .choix button{
     font-weight: bold;
@@ -78,7 +79,7 @@ input{
     padding-bottom: 6px;
     background-color: white;
     border: none;
-    width: 33%;
+    width: 32%;
 }
 .choix button:hover{
     background-color:rgb(181, 234, 181); 
@@ -86,18 +87,25 @@ input{
     cursor: pointer;
 }
 .Box{
-margin-left: 10px;
+margin-left: 0;
 margin-bottom: 60px;
 }
 .box{
     background-color: white;
     margin: 14px;
     width: 30%;
+    
     border: none;
     border-radius: 10px;
     padding: 6px;
     cursor: pointer;
-    box-shadow: 0 1px 2px rgb(50, 46, 46)
+    box-shadow: 0 1px 2px rgb(50, 46, 46);
+    height: 270px;
+    
+}
+.box a{
+    text-decoration: none;
+    color: black;
 }
 .box:hover{
     transform: translateY(-1px);
@@ -127,5 +135,377 @@ margin-bottom: 60px;
 .butt_defil button:hover{
     background-color: rgb(181, 234, 181);
 }
- 
 
+/* hôpitaux */
+body{
+    background-color: rgb(235, 240, 240);
+}
+.box_image{
+    background-color: rgb(196, 223, 170);
+    width: 90%;
+    height: 200px;
+    margin-bottom: 14px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.coordonnées{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+.box_logo{
+    background-color: white;
+    margin: 8px;
+    padding: 4px;
+}
+.disponibilite{
+    margin: 8px;
+    color: rgb(215, 40, 40);
+}
+.decision button{
+    margin-right: 30px;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.rdv{
+    background-color: rgb(21, 230, 21);
+    padding: 8px;
+    border-radius: 8px;
+    border: none; 
+    font-weight:bold ;
+}
+.rdv:hover{
+box-shadow: 0 1px 2px rgb(101, 93, 93);
+    transform: translateY(-1px);
+}
+.rdv a{
+    text-decoration: none;
+}
+.itinéraire{
+    border: none;
+    font-weight: bold;
+}
+.itinéraire:hover{
+    color: rgb(21, 230, 21);
+    
+}
+.special{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.Services{
+    width: 60%;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    
+}
+.Services li{
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    margin-left: 0px;
+    
+    
+}
+.Services a{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    background-color: rgb(160, 222, 160);
+    text-align: center;
+    border-radius: 6px;
+    padding:4px ;
+    
+}
+.Services ul{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.horaires-box {
+  width: 250px;
+  background-color: white;
+}
+
+.horaires-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.horaires-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horaires-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-bottom: 2px;
+}
+.horaires-list li:hover{
+    background-color: rgb(160, 222, 160);
+}
+
+
+
+.horaires-list li.Dimanche {
+  color: #9ca3af;
+}
+
+.urgence {
+  margin-top: 12px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.Team{
+   margin: 20px;
+   margin-top: 0;
+   margin-left: 0;
+}
+.team_box{
+    display: flex;
+    margin: 0px;
+    margin-right: 300px;
+}
+.member_box{
+    background-color: white;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 7px;
+}
+.member_image{
+    background-color:rgb(160, 222, 160);
+    width: 80px;
+    height: 80px; 
+    margin-left: 25%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.Nom_Prénom{
+    text-align: center;
+}
+.Spécialité{
+    text-align: center;
+}
+.localisation{
+    margin-top: 30px;
+    margin-right: 0px;
+}
+.box_localisation button{
+    width: 120px;
+    height: 120px;
+    margin-top: 4px;
+    border: none;
+    background-color: white;
+
+}
+/* Prise de RDV */
+.notification{
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 2px;
+}
+.prise_Rdv h3{
+margin: 10px;
+margin-left: 0;
+}
+.service_select{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+select{
+padding: 4px;
+border-radius: 4px;
+border: 1px solid rgb(61, 220, 61);
+}
+ select option:hover{
+    background-color:rgb(61, 220, 61);
+}
+.medec_choix{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.date_heure{
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    width: 50%;
+    margin-right: 50%;
+}
+.horaire h4{
+    margin-bottom: 8px;
+}
+.crénaux_hor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.crénaux_hor button{
+    padding: 4px;
+    width: 80px;
+    margin: 2px;
+    
+    border: 1px solid rgb(61, 220, 61);
+    border-radius: 8px;
+
+}
+.crénaux_hor button:hover{
+    background-color:rgb(160, 222, 160) ;
+}
+.recap{
+    background-color: white;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+.recap p{
+    margin-bottom: 8px;
+}
+.confirmation button{
+    background-color:rgb(27, 211, 27) ;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: bold; 
+    margin-left:80% ;
+    cursor: pointer;
+    margin-bottom: 80px;
+}
+/* Personnel */
+.identite{
+    background-color: white;
+    display: flex;
+    
+    padding: 8px; 
+    border-radius: 8px;
+}
+.photo_ident{
+    height: 85px;
+    width:85px ;
+    border-radius: 50%;
+    background-color: rgb(162, 234, 162) ;
+    text-align: center;
+}
+
+.right {
+  margin-left: 62%; 
+  margin-top: 3%; 
+}
+.right button{
+    padding: 4px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.description_rdv{
+    
+    margin-top: 20px;
+    display: flex;
+    margin-left: 4px;
+}
+.Dr_description{
+    margin: 4px;
+    background-color: white;
+    padding: 6px;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 60%;
+}
+.Dr_description h3{
+    margin: 8px;
+}
+.Dr_description li{
+    list-style: none;
+}
+.language{
+    display: flex;
+}
+.language li{
+    margin-right: 10px;
+    background-color: rgb(160, 216, 160) ;
+    border-radius: 8px;
+    padding: 4px;
+}
+.point{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.prise_rdv{
+    background-color: white;
+    padding: 6px;
+    border-radius: 8px;
+    margin-left: 40px;
+    width: 30%;
+    
+}
+.prise_rdv label{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 6px;
+}
+.but_ho{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+.but_ho button{
+    padding: 6px;
+    border: 1px solid rgb(200, 205, 202);
+    background-color: white;
+    border-radius: 10px;
+}
+.but_ho button:hover{
+    background-color:rgb(142, 214, 142) ;
+}
+.confirm{
+    background-color:rgb(19, 196, 19)  ;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 8px;
+    margin-left: 20%;
+    font-weight: bold;
+    cursor: pointer;
+}
+.horaire_consult{
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 10px;
+    
+   border-radius: 8px;
+}
+.horaire_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.horaire_consult li{
+    list-style: none;
+    padding: 8px;
+    display: flex;
+  justify-content: space-between;
+  
+}
+.horaire_consult li:hover{
+    background-color:rgb(142, 214, 142) ;
+    border-radius: 8px;
+}

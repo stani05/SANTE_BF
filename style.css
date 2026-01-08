@@ -286,6 +286,10 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
     margin-left: 0;
     border-radius: 7px;
 }
+.member_box a{
+    text-decoration: none;
+    color: black;
+}
 .member_image{
     background-color:rgb(160, 222, 160);
     width: 80px;
@@ -509,3 +513,4 @@ border: 1px solid rgb(61, 220, 61);
     background-color:rgb(142, 214, 142) ;
     border-radius: 8px;
 }
+

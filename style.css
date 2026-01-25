@@ -89,23 +89,28 @@ input{
 .Box{
 margin-left: 0;
 margin-bottom: 60px;
+
 }
 .box{
     background-color: white;
     margin: 14px;
     width: 30%;
-    
+     
     border: none;
     border-radius: 10px;
     padding: 6px;
     cursor: pointer;
     box-shadow: 0 1px 2px rgb(50, 46, 46);
-    height: 270px;
+    max-height: 300px;
     
 }
+
 .box a{
     text-decoration: none;
     color: black;
+}
+.box p{
+    margin-top: auto;
 }
 .box:hover{
     transform: translateY(-1px);
@@ -118,6 +123,7 @@ margin-bottom: 60px;
     margin: 4px;
     border-radius: 8px;
     height: 150px;
+    position: relative;
 }
 .butt_defil{
     text-align: center;
@@ -192,15 +198,15 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
     
 }
 .special{
-    margin-top: 20px;
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
    
 }
 .Services{
     width: 60%;
-    margin-right: 100px;
-    margin-bottom: 10px;
+    
     
 }
 .Services li{
@@ -229,6 +235,8 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
 .horaires-box {
   width: 250px;
   background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgb(144, 140, 140);
 }
 
 .horaires-box h3 {
@@ -270,21 +278,30 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
   font-weight: bold;
   font-size: 14px;
 }
+.hor_serv{
+    display: flex;
+    justify-content: space-between;
+    gap: 30%;
+}
 .Team{
    margin: 20px;
-   margin-top: 0;
+   margin-top: 5%;
    margin-left: 0;
 }
 .team_box{
     display: flex;
     margin: 0px;
-    margin-right: 300px;
+    
+    
 }
 .member_box{
+    
     background-color: white;
-    margin: 10px;
+    margin: 20px;
     margin-left: 0;
     border-radius: 7px;
+    box-shadow: 0 1px 2px rgb(172, 169, 169);
+    
 }
 .member_box a{
     text-decoration: none;
@@ -292,11 +309,16 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
 }
 .member_image{
     background-color:rgb(160, 222, 160);
-    width: 80px;
-    height: 80px; 
-    margin-left: 25%;
+    width: 90px;
+    height: 90px; 
+    display: grid;
+    place-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 4px;
+    
 }
 .Nom_Prénom{
     text-align: center;
@@ -305,15 +327,17 @@ box-shadow: 0 1px 2px rgb(101, 93, 93);
     text-align: center;
 }
 .localisation{
-    margin-top: 30px;
-    margin-right: 0px;
+    margin-top: 5%;
+    margin-right: 20px;
+    margin-bottom: 40px;
 }
 .box_localisation button{
     width: 120px;
     height: 120px;
-    margin-top: 4px;
+    margin-top: 10px;
     border: none;
     background-color: white;
+    border-radius: 6px;
 
 }
 /* Prise de RDV */

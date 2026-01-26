@@ -75,6 +75,13 @@
   margin-left: 20%; 
   margin-top: 3%; 
 }
+  .but_ho{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
 }
 
 /* Mobile */
@@ -83,3 +90,4 @@
     grid-template-columns: 1fr;
   }
 }
+

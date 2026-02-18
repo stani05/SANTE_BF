@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>inscription_hopital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="inscription.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="bannière">
+                    <div class="logo"><svg width="40" height="40" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="48" fill="#2ecc71"/>
+                        <!-- Croix principale -->
+                        <rect x="46" y="30" width="8" height="40" fill="white"/>
+                        <rect x="30" y="46" width="40" height="8" fill="white"/>
+                        <!-- Petit + en bas à droite -->
+                        <rect x="68" y="68" width="4" height="12" fill="white"/>
+                        <rect x="64" y="72" width="12" height="4" fill="white"/>
+                        </svg>
+                        e-Santé BF
+                    </div>
+                    <div class="menu">
+                        <ul class="Menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="CHU Yalgado Ouédraogo .html">Services</a></li>
+                            <li><a href="Rendez-vous hopital.html">Rendez-Vous</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Bienvenue</h1>
+            <p>Veullez remplir ces informations pour vous inscrire à la plateforme</p>
+            <form action="inscription_initial">
+                <div>
+                    <label for="nom" class="nom">Nom</label>
+                    <input type="text" id="nom" placeholder="nom de l'hopital" required>
+                </div>
+                <div>
+                    <label for="type" class="type">Type</label>
+                    <input type="text" id="type" placeholder="public ou privé" required>
+                </div>
+                <div>
+                    <label for="ville" class="ville">Ville</label>
+                    <input type="text" id="ville" placeholder="Ville de localisaion" required>
+                </div>
+                <div>
+                    <label for="description" class="description">Description</label>
+                    <input type="text" id="description" placeholder="une petite description de l'hopital" required>
+                </div>
+                <div>
+                    <label for="image" class="image">Image</label>
+                    <input type="file" accept="image/*" id="image" placeholder="image de l'hopital">
+                </div>
+                <button type="submit" id="send">envoyer</button>
+            </form>
+            <form >
+                <div class="second_inscription"  hidden>
+                    <div class="medecin_inscription">
+                        <h3>Inscription personnel de soin</h3>
+                        <p>veuillez remplir ces informationssur vos medecins en services</p>
+                        <div class="ins">
+                            <label for="nom" class="nom">Nom</label>
+                            <input type="text" id="nom" placeholder="nom complet du medecin" required>
+                        </div>
+                        <div class="ins">
+                            <label for="specialite" class="specialite">Spécialite</label>
+                            <input type="text" id="specialite" placeholder="spécialité du medecin" required>
+                        </div>
+                        <div class="ins">
+                            <label for="horaire_medecin" class="horaire_medecin">Horaire</label>
+                            <input type="time" id="horaire_medecin" placeholder="heure de service du medecin" required>
+                        </div>
+                        <div class="ins">
+                            <label for="photo_medecin">Photo</label>
+                            <input type="file" accept="image/*" id="photo_medecin" placeholder="photo de profil pour le medecin">
+                        </div>
+                        <div class="ins">
+                            <label for="hopital" class="hopital">Hopital</label>
+                            <input type="text" id="hopital" placeholder="nom de l'hopital">
+                        </div>
+                    </div>
+                    <div class="vaccin">
+                        <h3>Vaccins disponible</h3>
+                        <p>veuillez saisir les vaccins disponibles </p>
+                        <div class="ins">
+                            <label for="nom_vaccin" class="nom_vaccin">Nom</label>
+                            <input type="text" id="nom_vaccin" placeholder="nom des vaccins disponibles">
+                        </div>
+                        <div class="ins">
+                            <label for="prix_vaccin" class="prix_vaccin">Prix</label>
+                            <input type="number" id="prix_vaccin" placeholder="prix du vaccin">
+                        </div>
+                        <div class="ins">
+                            <label for="hopital" class="hopital">Hopital</label>
+                            <input type="text" id="hopital" placeholder="nom de l'hopital">
+                        </div>
+
+                    </div>
+                    <div class="Examen">
+                        <h3>Examens disponible</h3>
+                        <p>veuillez saisir les examens disponibles </p>
+                        <div class="ins">
+                            <label for="nom_examen" class="nom_examen">Nom</label>
+                            <input type="text" id="nom_examen" placeholder="nom des examen disponibles">
+                        </div>
+                        <div class="ins">
+                            <label for="prix_examen" class="prix_examen">Prix</label>
+                            <input type="number" id="prix_examen" placeholder="prix du examen">
+                        </div>
+                        <div class="ins">
+                            <label for="hopital" class="hopital">Hopital</label>
+                            <input type="text" id="hopital" placeholder="nom de l'hopital">
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

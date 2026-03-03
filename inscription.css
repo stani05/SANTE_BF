@@ -63,12 +63,12 @@ main{
     margin-top: 80px;
     text-align: center;
 }
-main h1{
+main h2{
     color:rgb(58, 188, 58) ;
     font-weight: bold;
     border-bottom: 2px solid rgb(58, 188, 58) ;
     padding-bottom: 10px;
-    font-size: 40px;
+    
 }
 main p{
     margin-top: 20px;
@@ -78,31 +78,61 @@ form{
     width: 70%;
     margin-left: 15%;
     border-radius: 10px;
-    background-color: rgb(145, 211, 145);
+    border: 1px solid rgb(58, 188, 58);
+    background-color: white;
     padding: 20px;
     margin-bottom: 80px;
     box-shadow: 0 2px 3px rgb(82, 71, 71);
 }
-
+form h3{
+    margin-bottom: 20px;
+}
 
 form label{
     
-    text-align: center;
+    text-align: start;
+    margin-left: 10%;
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
+    
 }
 form input{
     width: 80%;
     padding: 10px;
     border-radius: 8px;
-    border: 2px solid rgb(58, 188, 58);
+    border: none;
+    background-color: rgb(240, 238, 238);
     margin-bottom: 20px;
+}
+.politique {
+    display: flex;
+    
+}
+input[type="checkbox"] {
+  appearance: none; 
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(58, 188, 58);
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(58, 188, 58);
+  position: relative;
+}
+
+
+.politique p {
+    font-size:90% ;
+    font-weight: 500; 
+    margin-top: 4px;
 }
 button {
   width: 60%;
   padding: 10px;
-  background: #14ed23;
+  background: #627e64;
   color: white;
   border: none;
   border-radius: 6px;
@@ -112,14 +142,19 @@ button {
 }
 button:hover {
   background: #2a9e3e;
-  font-size: 120%;
+  
 }
 
 /*inscription_hopital*/
 
-.inscription_initial h1{
+.welcome {
     font-weight: bold;
     margin-bottom: 20px;
+    color:rgb(58, 188, 58) ;
+}
+.second_inscription h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .recap_box{

@@ -1,7 +1,12 @@
 /* Tablette */
 @media (max-width: 1024px) {
+  .des{
+    font-size: 20px;
+    font-weight: bold;
+  }
   body{
     width: 100%;
+    
   }
   .box {
     grid-template-columns: repeat(2, 1fr);
@@ -75,19 +80,235 @@
   margin-left: 20%; 
   margin-top: 3%; 
 }
-  .but_ho{
+.but_ho{
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 610px) {
   .box {
     grid-template-columns: 1fr;
   }
+.Menu{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 200px;
+  height: 80vh;
+ background-color: hsla(120, 100%, 75%, 0.4);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  transition: 0.3s;
+  border-radius: 10px;
+  z-index: 1000;
+  }
+  .Menu a:hover{
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+  }
+  .Menu.active{
+    right: 0;
+    
+  }
+  
+  .hamburger{
+    margin-right:0;
+    display: flex;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(109, 199, 109);
+    padding: 4px;
+    border-radius: 3px;
+    z-index: 1001;
+  }
+
+  
+  
+
+  .Box{
+        margin-left: 0;
+        margin-bottom: 60px;    
+        grid-template-columns: repeat(1, 1fr);
+        align-items: stretch;
+        width: 100%;
+    }
+.box{
+    background-color: white;
+    margin-left: 10%;
+    width: 80%;
+    align-items: stretch;
+    border: none;
+    border-radius: 10px;
+    padding: 6px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgb(50, 46, 46);
+    max-height: 30%;
+    height: 100%;
+    }
+.des{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .des_p{
+    font-size: 12px;
+  }
+  /* CHU */
+  .box_logo{
+    
+    margin: 8px;
+    margin-left: 2px;
+    padding: 4px;
+    border-radius: 6px;
+    aspect-ratio: 1 / 1; 
+    width: 50%;
+    
+  }
+  .coordonnées{
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .nom_coordonnées{
+    margin-right:4px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  .decision button{
+    
+    justify-content: space-between;
+    margin-left: 18px;
+}
+.special {
+  width: 100%;
+  
+  
+}
+.hor_serv{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 5%;
+  align-items: center;
+}
+.des_h{
+  font-size: 90%;
+}
+.horaires-box h3 ul li{
+  font-size: 85%;
+}
+.Services {
+  width: 90%;
+  margin-right: 40px;
+ 
+  
+  
+}
+.Services li{
+  font-size: 85%;
+  
+}
+.Team{
+  margin-top: 15%;
+  
+}
+.team_box{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 8px;                      
+  justify-content: center;        
+  align-items: center;            
+  height: 78vh;
+  margin-left: 4%;
+  
+}
+.member_box{
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+}
+/* inscription_hôpital */
+.inscription_hop .Menu{
+  display: flex; 
+  margin-right: 10%;
+  margin-top: 0;
+  background-color: rgb(235, 240, 240);
+}
+.inscription_hop .hamburger{
+  display: none;
 }
 
+.confirmation button{
+    background-color:rgb(27, 211, 27) ;
+    border: none;
+    padding: 6px;
+    border-radius: 10px;
+    font-weight: bold; 
+    margin-left:60% ;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+.prise_Rdv , p, h3{
+  font-size: 95%;
+}
+/* personnel */
+.language{
+    display: flex;
+    flex-wrap: wrap;
+}
+.but_ho{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    
+}
+.but_ho button{
+    padding: 2px;
+    border: 1px solid rgb(200, 205, 202);
+    background-color: white;
+    border-radius: 10px;
+}
+.horaire_box{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+.horaire_box span{
+  font-size: 90%;
+}
+.photo_ident{
+    height: 20vw;
+    width:20vw ;
+    border-radius: 50%;
+    background-color: rgb(162, 234, 162) ;
+    text-align: center;
+}
+
+
+}

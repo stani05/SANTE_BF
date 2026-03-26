@@ -10,20 +10,16 @@
     <body>
         <header>
             <nav>
+                <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 <div class="bannière">
-                    <div class="logo"><svg width="40" height="40" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="48" fill="#2ecc71"/>
-                        <!-- Croix principale -->
-                        <rect x="46" y="30" width="8" height="40" fill="white"/>
-                        <rect x="30" y="46" width="40" height="8" fill="white"/>
-                        <!-- Petit + en bas à droite -->
-                        <rect x="68" y="68" width="4" height="12" fill="white"/>
-                        <rect x="64" y="72" width="12" height="4" fill="white"/>
-                        </svg>
-                        e-Santé BF
+                    <div class="logo"><img src="logo.png" alt="logo du site">
                     </div>
                     <div class="menu">   
-                        <ul class="Menu">
+                        <ul class="Menu" id="Menu">
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="">Services</a></li>
                             <li><a href="">Mes rendez-vous</a></li>
@@ -47,8 +43,15 @@
                 </div>
             
             <div class="right">
-                <button class="share">Share</button>
-                <button class="J'aime">Like</button>
+                <button class="share"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 48 48" fill="black">
+                    <circle cx="36" cy="12" r="4"/>
+                    <circle cx="12" cy="24" r="4"/>
+                    <circle cx="36" cy="36" r="4"/>
+                    <line x1="36" y1="12" x2="12" y2="24" stroke="black" stroke-width="2"/>
+                    <line x1="12" y1="24" x2="36" y2="36" stroke="black" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="J'aime">🩶</button>
             </div>
         </div>
         <div class="description_rdv">
@@ -120,4 +123,5 @@
             </ul>
         </div>
     </body>
+    <script src="script.js"></script>
 </html>

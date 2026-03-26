@@ -27,14 +27,12 @@ nav{
     justify-content: space-between;
     text-align: center;
 }
-.logo{
-    display: flex;
-    justify-content: space-between;
+.logo img{
+   height: 70px;
+    width: auto;
+    padding: 0;
 }
-.logo p{
-    margin-top: 10px; 
-    font-weight: bold; 
-}
+
 .Menu{
     display: flex;
 }
@@ -143,6 +141,9 @@ button {
 button:hover {
   background: #2a9e3e;
   
+}
+.hamburger{
+  display: none;
 }
 
 /*inscription_hopital*/

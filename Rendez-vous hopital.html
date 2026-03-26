@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rendez-vous_hopital</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="inscription.css">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+               <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                <div class="bannière">
+                    <div class="logo"> <img src="logo.png" alt="logo">
+                    </div>
+                    <div class="menu">
+                        <ul class="Menu" id="Menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="CHU Yalgado Ouédraogo .html">Services</a></li>
+                            
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="inscription_initial">
+            <h1>Rendez-Vous disponibles</h1>
+            
+            <div class="recap_box">
+                <div class="rdv_box">
+                    <p>Patient:</p>
+                    <div class="box_container" id="patient_container">
+
+                    </div>
+                </div>
+                <div class="rdv_box">
+                    <p>Service:</p>
+                    <div class="box_container" id="Service_container">
+
+                    </div>
+                </div>
+                <div class="rdv_box" >
+                    <p>Médecin:</p>
+                    <div class="box_container" id="medecin_container">
+
+                    </div>
+                </div>
+                <div class="rdv_box" >
+                    <p>Date:</p>
+                    <div class="box_container" id="date_container">
+
+                    </div>
+                </div>
+                <div class="rdv_box" >
+                    <p>Heure:</p>
+                    <div class="box_container" id="heure_container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="statut">
+                <label for="statut">Statut</label>
+                 <input type="checkbox">
+            </div>
+            <button type="submit" id="send">Envoyer</button>
+        </main>
+    </body>
+    <script src="script.js"></script>
+</html>

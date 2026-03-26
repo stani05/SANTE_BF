@@ -10,23 +10,22 @@
     <body>
         <header>
             <nav>
+                
+
                 <div class="bannière">
-                    <div class="logo"><svg width="40" height="40" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="48" fill="#2ecc71"/>
-                        <!-- Croix principale -->
-                        <rect x="46" y="30" width="8" height="40" fill="white"/>
-                        <rect x="30" y="46" width="40" height="8" fill="white"/>
-                        <!-- Petit + en bas à droite -->
-                        <rect x="68" y="68" width="4" height="12" fill="white"/>
-                        <rect x="64" y="72" width="12" height="4" fill="white"/>
-                        </svg>
-                        e-Santé BF
+                    <div class="logo"><img src="logo.png" alt="logo du site" >
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     </div>
-                    <div class="menu">
-                        <ul class="Menu">
+                    <div class="menu" id="menu">
+                        <ul class="Menu" id="Menu">
+                            
                             <li><a href="">Accueil</a></li>
                             <li><a href="">A Propos</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><button type="button" name="notification" class="notification">🔔</button></li>
                             <div class="connecter"><button type="submit">Se connecter</button></div>
                         </ul>
 
@@ -34,8 +33,8 @@
                 </div>
             </nav>
         </header>
-        <h1>Trouver votre établissement de santé au Burkina Faso</h1>
-        <p>Rechercher et filtrez pour trouver le centre de santé qui vous convient</p>
+        <h1 class="des">Trouver votre établissement de santé au Burkina Faso</h1>
+        <p class="des_p">Rechercher et filtrez pour trouver le centre de santé qui vous convient</p>
         <input type="text" name="Recherche" id="Recherche" placeholder="Rechercher un centre de santé par nom ou ville..." required>
         <div class="choix">
             <button name="Tous" type="button">Tous</button>
@@ -108,4 +107,5 @@
 
             
     </body>
+    <script src="script.js"></script>
 </html>

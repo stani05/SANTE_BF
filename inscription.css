@@ -9,6 +9,7 @@ body{
     background-color:  rgb(235, 240, 240);
     justify-content: center;
     align-items: center;
+    
     margin-bottom: 70px;
     margin-top: 140px;
 }
@@ -28,7 +29,6 @@ nav{
     left: 0;
     width: 100%;
 }
-
 .bannière{
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,6 @@ nav{
 .Menu{
     display: flex;
     flex-grow: 1;
-}
 }
 .Menu li{
     list-style: none;
@@ -66,6 +65,13 @@ nav{
 .menu a:hover{
     color: rgb(61, 220, 61);
     }
+    .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+}
 .hamburger {
             display: none;
             flex-direction: column;
@@ -115,7 +121,7 @@ form input{
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(63, 21, 21);
     margin-bottom: 20px;
 }
 .politique {
@@ -143,7 +149,7 @@ input[type="checkbox"]:checked {
     font-weight: 500; 
     margin-top: 4px;
 }
-button {
+ form button {
   width: 60%;
   padding: 10px;
   background: #627e64;
@@ -158,9 +164,7 @@ button:hover {
   background: #2a9e3e;
   
 }
-.hamburger{
-  display: none;
-}
+
 
 /*inscription_hopital*/
 

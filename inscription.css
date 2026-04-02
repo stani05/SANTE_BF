@@ -9,19 +9,26 @@ body{
     background-color:  rgb(235, 240, 240);
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     margin-bottom: 70px;
+    margin-top: 140px;
 }
 nav{
-    border-radius: 4px;
+    background-color: white;
+    border: 3px solid rgba(42, 242, 20, 0.18);
+    border-radius: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
-    margin-top: 10px;
     margin-bottom: 20px;
-    padding: 4px;
-    box-shadow: 0 1px 2px rgb(41, 213, 41);
+    padding: 0px;
+    box-shadow: 2px 3px 30px rgba(48, 48, 57, 0.37);
     justify-content: center;
+    z-index: 1000; 
+    position: fixed;   
+    top: 0;            
+    left: 0;
+    width: 100%;
 }
+
 .bannière{
     display: flex;
     justify-content: space-between;
@@ -35,12 +42,14 @@ nav{
 
 .Menu{
     display: flex;
+    flex-grow: 1;
+}
 }
 .Menu li{
     list-style: none;
     margin-left: 20px;
 }
-.connecter button{
+.inscrire{
     margin-left: 20px;
     background-color: rgb(58, 188, 58);
     border-radius: 4px;
@@ -57,6 +66,13 @@ nav{
 .menu a:hover{
     color: rgb(61, 220, 61);
     }
+.hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            background: none;
+            border: none;
+}
 main{
     margin-top: 80px;
     text-align: center;

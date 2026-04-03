@@ -94,13 +94,7 @@
     background: none;
     border: none;
 }
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 3px 0;
-    transition: 0.3s;
-}
+
 }
 
 /* Mobile */
@@ -112,9 +106,9 @@
   position: fixed;
   top: 0;
   right: -100%;
-  width: 200px;
+  width: 300px;
   height: 80vh;
- background-color: hsla(120, 100%, 75%, 0.4);
+ background-color: rgb(255, 255, 255);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -122,6 +116,7 @@
   transition: 0.3s;
   border-radius: 10px;
   z-index: 1000;
+  box-shadow:  2px 2px rgb(192, 186, 186);
   }
   .Menu a:hover{
     text-decoration: underline;
@@ -132,8 +127,14 @@
     right: 0;
     
   }
-  
-  .hamburger{
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+  .hamburger {
     margin-right:0;
     display: flex;
     cursor: pointer;
@@ -253,15 +254,7 @@
   align-items: center;
 }
 /* inscription_hôpital */
-.inscription_hop .Menu{
-  display: flex; 
-  margin-right: 10%;
-  margin-top: 0;
-  background-color: rgb(235, 240, 240);
-}
-.inscription_hop .hamburger{
-  display: none;
-}
+
 
 .confirmation button{
     background-color:rgb(27, 211, 27) ;

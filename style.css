@@ -42,7 +42,16 @@ nav{
             background: none;
             border: none;
 }
- 
+ .round-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e7eaed;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
 .Menu{
     display: flex;
     flex-grow: 1;
